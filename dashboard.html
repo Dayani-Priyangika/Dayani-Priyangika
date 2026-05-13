@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LMS - Student Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f4f6f8;
+      overflow: hidden;
+      color: #333;
+    }
+
+    nav img {
+      width: 150px;
+    }
+
+    /* Sidebar styles (exactly your provided code) */
+    .sidebar {
+      width: 240px;
+      background-color: #243a73;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #1b2d5c;
+      padding-left: 20px;
+      transition: 0.3s;
+    }
+
+    /* Main content next to sidebar */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 30px 40px;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 25px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .welcome {
+      background: #e0f0ff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .box {
+      flex: 1 1 45%;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #003366;
+      font-weight: 700;
+      border-bottom: 3px solid #1976d2;
+      display: inline-block;
+      padding-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    ul li strong {
+      color: #222;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section {
+        flex-direction: column;
+      }
+      .box {
+        flex: 1 1 100%;
+      }
+      .main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="images/h.png" alt="Logo" />
+    <h2>Bolana Education Center</h2>
+    <a href="#">Dashboard</a>
+    <a href="student.html" style="background-color:#1b2d5c; padding-left:20px;">Students</a>
+    <a href="teachers3.php">Teachers</a>
+    <a href="courses2.html">Courses</a>
+    <a href="notices.html">Notices</a>
+    <a href="contact2.html">Contact</a>
+  </div>
+
+  <div class="main">
+    <header>
+      Welcome to Bolana Education Center LMS - Student Dashboard
+    </header>
+
+    <div class="welcome">
+      <h2>Hello, Student!</h2>
+      <p>Welcome back. Check your courses, progress, and upcoming assignments here.</p>
+    </div>
+
+    <div class="section">
+      <div class="box">
+        <h2>Your Courses</h2>
+        <ul>
+          <li>Mathematics - Grade 10</li>
+          <li>Science - Grade 10</li>
+          <li>English Language</li>
+          <li>ICT - Practical Class</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Profile Summary</h2>
+        <ul>
+          <li><strong>Name:</strong> Dasun Shanaka</li>
+          <li><strong>Grade:</strong> 10</li>
+          <li><strong>Email:</strong> dasunshanaka@gmail.com</li>
+          <li><strong>Status:</strong> Active</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

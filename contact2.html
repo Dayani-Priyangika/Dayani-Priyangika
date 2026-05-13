@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - BolanaEducation Center</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh; /* ensures at least full screen height */
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #243a73;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+     .sidebar img {
+      width: 150px;
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      font-weight: 600;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #1b2d5c;
+      padding-left: 20px;
+      transition: 0.3s;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px 40px;
+      max-width: 900px;
+      background-color: transparent;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 100%;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 10px;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      width: fit-content;
+      align-self: center;
+      min-width: 140px;
+    }
+
+    button:hover {
+      background-color: #00509e;
+    }
+
+    .contact-details {
+      margin-top: 40px;
+      line-height: 1.8;
+      color: #333;
+      font-size: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-details h3 {
+      color: #003366;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .sidebar img {
+        max-height: 40px;
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+
+      .sidebar h2 {
+        display: none;
+      }
+
+      .sidebar a {
+        margin: 0 10px;
+        padding: 10px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .main {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="images/h.png" alt="Logo" />
+    <h2>Bolana Education Center</h2>
+    <a href="dashboard.php">Dashboard</a>
+    <a href="student.html">Students</a>
+    <a href="teachers3.php">Teachers</a>
+    <a href="courses2.html">Courses</a>
+    <a href="notices.html">Notices</a>
+    <a href="contact2.html" class="active">Contact</a>
+  </div>
+
+  <div class="main">
+    <header>
+      <h3>Contact Us - BolanaEducation Center</h3>
+    </header>
+
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form action="send_email.php" method="POST" id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-details">
+        <h3>Contact Information:</h3>
+        <p><strong>Address:</strong> BolanaEducation Center, Bolana, Ambalantota, Sri Lanka</p>
+        <p><strong>Phone:</strong> +94 71 123 4567</p>
+        <p><strong>Email:</strong> info@bolanaedu.lk</p>
+        <p><strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 4:00 PM</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

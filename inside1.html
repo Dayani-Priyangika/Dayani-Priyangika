@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>System Analysis and Design</title>
+  <style>
+    /*inside course*/
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #f4f6fc;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #1E3A8A; /* Blue base */
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding: 8px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #3B82F6;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .header {
+      background-color: #1E3A8A;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 15px;
+      background-color: #DBEAFE;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: #3B82F6;
+      color: white;
+    }
+
+    .content-section h2,
+    .content-section h3 {
+      margin: 20px 0 10px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #E5E7EB;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    #downloadPdf {
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      background-color: #3B82F6;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    #downloadPdf:hover {
+      background-color: #2563EB;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2 class="logo">Bolana Education Center</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Student</a></li>
+      <li><a href="#">Teachers</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Notices</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>System Analysis and Design</h1>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">Contents</button>
+      <button class="tab">Participants</button>
+      <button class="tab">Grades</button>
+      <button class="tab">Competencies</button>
+    </div>
+
+    <!-- Download PDF button -->
+    <button id="downloadPdf">Download PDF</button>
+
+    <div class="content-section">
+      <h2>General</h2>
+      <div class="card"><a href="">📢 Announcements</a></div>
+
+      <h3>26 February - 3 March</h3>
+      <div class="card">📄 Introduction to SAD</div>
+      <div class="card">📄 week1-2</div>
+      <div class="card">📄 activity</div>
+
+      <h3>4 March - 10 March</h3>
+      <div class="card">📄 week 2</div>
+
+      <h3>11 March - 17 March</h3>
+      <div

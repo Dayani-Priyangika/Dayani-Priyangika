@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bolana Education Center - All Teachers</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #eef2f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #003366, #00509e);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #003366;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #00509e;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Teacher Grid */
+    .teacher-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* Teacher Card */
+    .teacher-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid #e5eaf0;
+    }
+
+    .teacher-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .teacher-card h3 {
+      margin-bottom: 8px;
+      color: #00509e;
+      font-size: 1.2rem;
+    }
+
+    .teacher-card p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+    }
+
+    .teacher-card strong {
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #003366;
+      color: white;
+      margin-top: 35px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Fix for Smaller Screens */
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .teacher-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bolana Education Center - Teachers Directory</h1>
+</header>
+
+<div class="container">
+  <h2>Our Teachers</h2>
+
+  <div class="teacher-grid">
+    <div class="teacher-card">
+      <h3>Mr. Sampath Perera</h3>
+      <p><strong>Subject:</strong> Mathematics</p>
+      <p><strong>Email:</strong> sampath@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Ms. Nadeesha Fernando</h3>
+      <p><strong>Subject:</strong> English</p>
+      <p><strong>Email:</strong> nadeesha@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Kusal Wijesinghe</h3>
+      <p><strong>Subject:</strong> Science</p>
+      <p><strong>Email:</strong> kusal@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Ms. Shani Rajapaksha</h3>
+      <p><strong>Subject:</strong> History</p>
+      <p><strong>Email:</strong> shani@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Ruwan Silva</h3>
+      <p><strong>Subject:</strong> ICT</p>
+      <p><strong>Email:</strong> ruwan@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Ms. Hiruni Madushani</h3>
+      <p><strong>Subject:</strong> Sinhala</p>
+      <p><strong>Email:</strong> hiruni@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Janaka Weerasinghe</h3>
+      <p><strong>Subject:</strong> Geography</p>
+      <p><strong>Email:</strong> janaka@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Ms. Dilani Jayasuriya</h3>
+      <p><strong>Subject:</strong> Buddhism</p>
+      <p><strong>Email:</strong> dilani@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Nuwan Ranasinghe</h3>
+      <p><strong>Subject:</strong> Tamil</p>
+      <p><strong>Email:</strong> nuwan@bolanaedu.lk</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Ms. Piumi Lakshani</h3>
+      <p><strong>Subject:</strong> Art</p>
+      <p><strong>Email:</strong> piumi@bolanaedu.lk</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Bolana Education Center | All Rights Reserved
+</footer>
+
+</body>
+</html>

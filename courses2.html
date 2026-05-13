@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BolanaEducation Center - Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #f4f6f8;
+      color: #333;
+      margin: 0;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 300px;
+      background-color: #243a73;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: 100vh;       /* full viewport height */
+      overflow-y: auto;    /* scroll if content overflows */
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+      color: white; /* explicit white */
+	margin-bottom: 15px;
+    }
+
+ .sidebar img {
+      width: 150px;
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #1b2d5c;
+      padding-left: 20px;
+      transition: 0.3s;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 20px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #003366;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .course-card h3 {
+      margin-bottom: 10px;
+      color: #00509e;
+    }
+
+    .course-card p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .wrapper {
+        flex-direction: column;
+        height: auto;
+      }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 10px 20px;
+      }
+      .sidebar h2 {
+        display: none;
+      }
+      .sidebar a {
+        margin: 0 10px;
+        padding: 10px;
+        white-space: nowrap;
+      }
+      .main {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .course-grid {
+        grid-template-columns: 1fr !important; /* stack cards vertically */
+      }
+      .course-card {
+        padding: 15px 10px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar">
+      <img src="images/h.png" alt="Logo" />
+      <h2>Bolana Education Center</h2>
+      <a href="dashboard.php">Dashboard</a>
+      <a href="student.html">Students</a>
+      <a href="teachers3.php">Teachers</a>
+      <a href="courses2.html" class="active">Courses</a>
+      <a href="notices.html">Notices</a>
+      <a href="contact2.html">Contact</a>
+    </div>
+
+    <div class="main">
+      <header>
+        <h1>Bolana Education Center - Courses</h1>
+      </header>
+
+      <h2>Available Courses</h2>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Mathematics</h3>
+          <p><strong>Grade:</strong> 10</p>
+          <p>Algebra, Geometry, and basic Trigonometry concepts.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Science</h3>
+          <p><strong>Grade:</strong> 10</p>
+          <p>Physics, Chemistry, Biology with practical activities.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>English</h3>
+          <p><strong>Grade:</strong> 9</p>
+          <p>Grammar, reading, writing, and speaking improvement.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>ICT</h3>
+          <p><strong>Grade:</strong> 11</p>
+          <p>Basic computer operations, Word, Excel, and coding.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>History</h3>
+          <p><strong>Grade:</strong> 8</p>
+          <p>Ancient civilizations, Sri Lankan history, and timelines.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Geography</h3>
+          <p><strong>Grade:</strong> 9</p>
+          <p>Maps, landforms, climate, and environment awareness.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Sinhala</h3>
+          <p><strong>Grade:</strong> 10</p>
+          <p>Grammar, literature, essays, and language usage.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Art</h3>
+          <p><strong>Grade:</strong> 6</p>
+          <p>Drawing, colors, painting techniques and creativity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BolanaEducation Center | All Rights Reserved
+  </footer>
+
+</body>
+</html>
