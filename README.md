@@ -47,8 +47,8 @@ I am passionate about learning software development and building practical web-b
 - Contribute to open-source projects
 
 ## 📫 Contact Me
-- Email: your-dpriyangika204@gmail.com
-- GitHub: your-Dayani Priyangika
+- Email: dpriyangika204@gmail.com
+- GitHub: Dayani Priyangika
 
 ## ⚡ Fun Fact
 I use GitHub to document my learning journey and share my academic projects.
